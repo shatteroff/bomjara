@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NS/NS.iml" filepath="$PROJECT_DIR$/NS/NS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NSProject.iml" filepath="$PROJECT_DIR$/NSProject.iml" />
+    </modules>
+  </component>
+</project>
+

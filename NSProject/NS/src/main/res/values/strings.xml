@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="number">Введите номер</string>
+    <string name="pnumber">Переделанный номер</string>
+    <string name="peredelka">Переделать номер</string>
+    <string name="about">О программе</string>
+    <string name="exit">Выход</string>
+    <string name="title_activity_about">О программе</string>
+    <string name="version">Версия : Alpha</string>
+    <string name="razra">Разработал:</string>
+    <string name="razrab1">Пивоваров Андрей при поддержке Григоряна Александра</string>
+    <string name="call1">Скинуть НСа</string>
+
+
+</resources>
