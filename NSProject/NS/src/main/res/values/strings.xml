@@ -13,7 +13,7 @@
     <string name="version">Версия : Alpha</string>
     <string name="razra">Разработал:</string>
     <string name="razrab1">Пивоваров Андрей при поддержке Григоряна Александра</string>
-    <string name="call1">Скинуть НСа</string>
+    <string name="call1">Скинуть НСа</string><string name="mts">МТС</string><string name="beel">Билайн, Мегафон</string><string name="oper">Выбирете оператора получателя</string>
 
 
 </resources>

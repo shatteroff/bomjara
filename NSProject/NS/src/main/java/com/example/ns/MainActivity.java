@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -18,6 +20,9 @@ public class MainActivity extends Activity implements OnClickListener {
     Button button1;
     Button button2;
     TextView Textview1;
+    RadioButton radioButton;
+    RadioButton radioButton2;
+    RadioGroup rg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,9 @@ public class MainActivity extends Activity implements OnClickListener {
         button1 = (Button) findViewById (R.id.button1);
         button2 = (Button) findViewById (R.id.button2);
         Textview1 = (TextView) findViewById (R.id.textView1);
-
+        radioButton = (RadioButton) findViewById(R.id.radioButton);
+        radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
+        rg = (RadioGroup) findViewById(R.id.rg);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
 
@@ -52,11 +59,21 @@ public class MainActivity extends Activity implements OnClickListener {
         value1 = Long.parseLong(a);
                 switch (v.getId()){
             case R.id.button1:
-                Textview1.setText("*144*"+value1+"#");
+                if (radioButton.isChecked()) {
+                    Textview1.setText("*144*"+value1+"#");
+                }
+                if (radioButton2.isChecked()) {
+                    Textview1.setText("*110*"+value1+"#");
+                }
                 break;
             case R.id.button2:
                 intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse("tel:*144*"+value1+encodedHash));
+                if (radioButton.isChecked()) {
+                    intent.setData(Uri.parse("tel:*144*"+value1+encodedHash));
+                }
+                if (radioButton2.isChecked()) {
+                    intent.setData(Uri.parse("tel:*110*"+value1+encodedHash));
+                }
                 startActivity(intent);
                 break;
 
